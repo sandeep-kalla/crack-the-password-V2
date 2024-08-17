@@ -39,7 +39,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url("./image.png"); /* Add a subtle pattern */
+  background-image: url("https://img.freepik.com/premium-vector/patterns-seamless-pattern-black-white-abstract-pattern-style-postmodern-mashup_167718-1447.jpg"); /* Add a subtle pattern */
   opacity: 0.04; /* Light opacity for subtle effect */
   z-index: 0; /* Place behind other elements */
 }
