@@ -1,0 +1,34 @@
+.success-message {
+  text-align: center;
+  margin-top: 100px;
+  background-color: #ffffff; /* Solid white background for the success message */
+  padding: 40px; /* Padding around the message */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 600px; /* Max width for better layout */
+  margin: 100px auto; /* Center the message */
+  z-index: 1;
+}
+
+.success-message h2 {
+  color: #28a745; /* Green color for success */
+  font-size: 2.5rem; /* Increased font size */
+  margin-bottom: 20px;
+  font-weight: bold; /* Bold font */
+  font-family: "Roboto", sans-serif; /* Modern font */
+}
+
+.success-message p {
+  font-size: 1.2rem; /* Slightly larger text */
+  color: #666; /* Lighter color for the message */
+  margin: 0; /* Remove default margin */
+  font-family: "Roboto", sans-serif; /* Modern font */
+}
+
+/* Optional: Add a success icon */
+.success-message::before {
+  content: "✔️"; /* Success icon */
+  font-size: 3rem; /* Icon size */
+  display: block; /* Make it a block element */
+  margin-bottom: 20px; /* Space below the icon */
+}

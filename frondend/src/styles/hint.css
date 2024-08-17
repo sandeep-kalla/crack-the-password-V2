@@ -1,0 +1,87 @@
+.hint-container {
+  position: absolute; /* Position it on the left side */
+  left: 160px; /* Space from the left edge */
+  top: 190px; /* Space from the top */
+}
+
+.hint-button {
+  background-color: #28a745; /* Green background */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 50%; /* Make it round */
+  cursor: pointer;
+  font-size: 2rem; /* Larger font size for the icon */
+  width: 60px; /* Width of the button */
+  height: 60px; /* Height of the button */
+  display: flex; /* Center the icon */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  transition: background-color 0.3s, transform 0.2s; /* Animation effects */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.hint-button:hover {
+  background-color: #218838; /* Darker green on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.hint-button.disabled {
+  background-color: #ccc; /* Grey background when disabled */
+  cursor: not-allowed; /* Change cursor to indicate it's disabled */
+}
+
+.hint-card {
+  background-color: #ffffff; /* Solid white background */
+  padding: 20px; /* Padding around the card */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 250px; /* Fixed width for the hint card */
+  z-index: 10; /* Ensure it appears above other elements */
+  opacity: 0; /* Start hidden for animation */
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Animation for fade-in */
+}
+
+.hint-card.show {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to original position */
+  animation: pop-up 0.3s ease forwards; /* Add pop-up animation */
+}
+
+@keyframes pop-up {
+  0% {
+    transform: scale(0.8); /* Start smaller */
+  }
+  100% {
+    transform: scale(1); /* End at normal size */
+  }
+}
+
+.hint-card h3 {
+  margin: 0 0 10px; /* Space below the heading */
+  font-size: 1.5rem; /* Font size for the heading */
+  color: #333; /* Darker color for the heading */
+  border-bottom: 2px solid #28a745; /* Bottom border for separation */
+  padding-bottom: 5px; /* Space below the heading */
+}
+
+.hint-card p {
+  margin: 5px 0; /* Space around paragraphs */
+  font-size: 1rem; /* Font size for the hint message */
+  color: #666; /* Lighter color for the message */
+}
+
+.close-button {
+  background: none; /* No background */
+  border: none; /* No border */
+  color: #e74c3c; /* Red color for the close button */
+  font-size: 1.5rem; /* Font size for the close button */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: absolute; /* Position it in the corner */
+  top: 10px; /* Space from the top */
+  right: 10px; /* Space from the right */
+}
+
+.close-button:hover {
+  color: #c0392b; /* Darker red on hover */
+}

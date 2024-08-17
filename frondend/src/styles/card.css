@@ -1,0 +1,80 @@
+.card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 800px; /* Increased width to accommodate larger font size */
+  margin: 50px auto;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.card h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem; /* Increased font size */
+  color: #333;
+  font-weight: bold; /* Bold heading */
+  text-transform: uppercase; /* Uppercase for emphasis */
+  letter-spacing: 1px; /* Spacing between letters */
+  border-bottom: 2px solid #28a745; /* Underline effect */
+  padding-bottom: 10px; /* Space below heading */
+}
+
+.card .salted-password {
+  background-color: #f8f9fa; /* Light background for the salted password */
+  border: 1px dashed #28a745; /* Dashed border for distinction */
+  padding: 15px 10px;
+  border-radius: 10px;
+  margin: 20px 0; /* Space around the salted password section */
+  font-size: 1rem; /* Increased font size for better readability */
+  color: #333; /* Darker text color */
+  font-family: "Courier New", Courier, monospace; /* Monospace font for a techy feel */
+  overflow: visible; /* Allow overflow to be visible */
+  white-space: normal; /* Allow text to wrap normally */
+  word-wrap: break-word; /* Break long words to prevent overflow */
+}
+
+.card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.card input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.card input:focus {
+  border-color: #28a745; /* Green border on focus */
+  outline: none;
+}
+
+.card button {
+  padding: 12px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.card button:hover {
+  background-color: #218838;
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.error {
+  color: #e74c3c; /* Red color for errors */
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
